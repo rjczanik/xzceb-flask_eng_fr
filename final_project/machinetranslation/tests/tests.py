@@ -9,10 +9,7 @@ class TestEngToFrText(unittest.TestCase):
         )
 
     def test_valid_arguement(self):
-#        self.assertEqual(english_to_french("Hello"), "Bonjour")
-        self.assertEqual(
-            english_to_french(None), "Please enter some text to translate..."
-        )
+        self.assertEqual(english_to_french("Hello"), "Bonjour")
 
 
 class TestFrToEngText(unittest.TestCase):
@@ -22,10 +19,7 @@ class TestFrToEngText(unittest.TestCase):
         )
 
     def test_valid_arguement(self):
-#        self.assertEqual(english_to_french("Bonjour"), "Hello")
-        self.assertEqual(
-            french_to_english(None), "Please enter some text to translate..."
-        )
+        self.assertEqual(english_to_french("Bonjour"), "Hello")
 
 
 if __name__ == "__main__":
