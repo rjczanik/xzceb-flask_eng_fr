@@ -21,7 +21,7 @@ def english_to_french(eng_fr_txt):
         return "Please enter some text to translate..."
     translation = language_translator.translate(
         text=eng_fr_txt, model_id="en-fr"
-    ).get_results
+    ).get_results()
     frenchText = translation["translations"][0]["translation"]
     return frenchText
 
